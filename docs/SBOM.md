@@ -43,3 +43,9 @@ jq .spdxVersion sbom-output/gasguard-node-sbom.spdx.json
 # Check CycloneDX format
 jq .bomFormat sbom-output/gasguard-sbom.cyclonedx.json
 ```
+
+## Ingesting SBOMs from Scanned Repositories
+
+This page covers SBOMs GasGuard generates for its own releases. To accept
+SBOMs that scanned repositories supply (CycloneDX/SPDX JSON attached to a
+repository scan), see [SBOM Ingestion for Repository Scans](./SBOM_INGESTION.md).

@@ -1,0 +1,51 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "gasguard-sample-repo",
+  "documentNamespace": "https://example.com/spdx/gasguard-sample-repo-1",
+  "documentDescribes": ["SPDXRef-root"],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-root",
+      "name": "gasguard-sample-repo",
+      "versionInfo": "0.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-ethers",
+      "name": "ethers",
+      "versionInfo": "6.16.0",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "checksums": [{ "algorithm": "SHA256", "checksumValue": "00ff00ff" }],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/ethers@6.16.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-serde",
+      "name": "serde",
+      "versionInfo": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT OR Apache-2.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/serde@1.0.200"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-root"
+    }
+  ]
+}

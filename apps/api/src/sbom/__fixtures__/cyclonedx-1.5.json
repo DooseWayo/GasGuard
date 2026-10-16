@@ -1,0 +1,51 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79",
+  "version": 1,
+  "metadata": {
+    "component": { "type": "application", "name": "gasguard-sample-repo", "version": "0.1.0" }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "lodash",
+      "version": "4.17.21",
+      "purl": "pkg:npm/lodash@4.17.21",
+      "licenses": [{ "license": { "id": "MIT" } }],
+      "hashes": [{ "alg": "SHA-256", "content": "ABCDEF0123456789" }]
+    },
+    {
+      "type": "library",
+      "group": "@openzeppelin",
+      "name": "contracts",
+      "version": "5.0.2",
+      "purl": "pkg:npm/%40openzeppelin/contracts@5.0.2",
+      "licenses": [{ "expression": "MIT" }],
+      "components": [
+        {
+          "type": "file",
+          "name": "ERC20.sol",
+          "version": "5.0.2"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "soroban-sdk",
+      "version": "21.0.0",
+      "purl": "pkg:cargo/soroban-sdk@21.0.0?repository_url=https%3A%2F%2Fdeploy%3Ahunter2%40crates.example.com",
+      "licenses": [{ "license": { "id": "Apache-2.0" } }]
+    },
+    {
+      "type": "library",
+      "name": "lodash",
+      "version": "4.17.21",
+      "purl": "pkg:npm/lodash@4.17.21"
+    },
+    {
+      "type": "library",
+      "version": "1.0.0"
+    }
+  ]
+}
