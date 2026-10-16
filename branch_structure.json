@@ -1,0 +1,21 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "feature/package-maintainer-change-signals",
+    "feature/supply-chain-maintainer-change-signals",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "feature/package-maintainer-change-signals": "main",
+    "feature/supply-chain-maintainer-change-signals": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "feature/package-maintainer-change-signals",
+    "feature/supply-chain-maintainer-change-signals",
+    "origin"
+  ]
+}
